@@ -40,6 +40,10 @@
     text-align: right;
 }
 
+.list-inline {
+    display: inline;
+}
+
 /* Buttons */
 .btn {
     display: inline-block;
@@ -62,10 +66,14 @@
     padding: 20px 25px;
 }
 
+.orange {
+    color: #fe775a;
+}
+
 /* STYLES */
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: /*'FontAwesome 5 Free',*/'Montserrat', sans-serif;
     color: #33475b;
 }
 
@@ -151,7 +159,8 @@ header .top-header {
 
 /* aumento spazio interlinea in p */
 .hero .container .w50 p,
-.rubik .container-small p {
+.rubik .container-small p,
+.cards .three-col p {
     line-height: 1.6em;
 }
 
@@ -183,6 +192,8 @@ header .top-header {
 
 .cards .card-fullwidth {
     width: 100%;
+    padding: 70px;
+    padding-right: 120px;
 }
 
 .cards .container .three-col .left-col,
@@ -190,14 +201,110 @@ header .top-header {
 .cards .container .three-col .right-col {
     width: calc(100% / 3 - 120px / 3);
     text-align: center;
+    background-color: #fff;
+    padding: 25px 35px;
 }
 
 .cards .card-fullwidth {
     width: 100%;
     margin-bottom: 60px;
+    background-color: #fff;
+}
+
+.cards .info {
+    width: 66%;
 }
 
 .cards .center-col {
     margin-left: 60px;
     margin-right: 60px;
+}
+
+.cards .container .card-fullwidth .image {
+    width: 33%;
+    text-align: center;
+}
+
+.cards .container .card-fullwidth .image img {
+    width: 180px;
+    margin-bottom: 25px;
+}
+
+.cards .container .card-fullwidth .image a.btn {
+    width: 160px;
+}
+
+/* margine verticale tra gli elementi tranne l'ultimo */
+.cards .info *:not(:last-child){
+    margin-bottom: 30px;
+}
+
+/* sovrascrivo il margine dell H3 */
+.cards .info h3 {
+    font-size: 24px;
+    margin-bottom: 45px; /*NON SOVRASCRIVE*/
+
+}
+
+.cards .h4hr {
+    position: relative;
+}
+
+.cards .info h4 {
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    top: 0px;
+    z-index: 10;
+    background-color: #fff;
+}
+
+.cards .info hr {
+    position: relative;
+    top: 10px;
+}
+
+.cards .info ul {
+    margin-top: 50px;
+}
+
+.cards .info ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+/* NON FUNZIONA */
+/* .cards .info ul li::before {*/
+    /* content: '\f058'; */
+/* } */
+
+
+/* three col */
+.cards .three-col img {
+    height: 100px;
+}
+
+
+.cards .three-col h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cards .three-col p {
+    display: inline-block;
+    min-height: 170px;
+    margin-bottom: 40px;
+    line-height: ;
+    border-bottom: 1px solid #899397;
+}
+
+.cards .three-col ul {
+    text-align: left;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.cards .three-col a {
+    margin-top: 50px;
 }
