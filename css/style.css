@@ -69,6 +69,10 @@ body {
     color: #33475b;
 }
 
+main {
+    background-color: #f4f9fd;
+}
+
 h1 {
     font-size: 48px;
 }
@@ -173,4 +177,27 @@ header .top-header {
 
 .rubik .container-small h2 {
     font-size: 30px;
+}
+
+/* CARDS SECTION */
+
+.cards .card-fullwidth {
+    width: 100%;
+}
+
+.cards .container .three-col .left-col,
+.cards .container .three-col .center-col,
+.cards .container .three-col .right-col {
+    width: calc(100% / 3 - 120px / 3);
+    text-align: center;
+}
+
+.cards .card-fullwidth {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.cards .center-col {
+    margin-left: 60px;
+    margin-right: 60px;
 }
