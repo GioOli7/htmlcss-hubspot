@@ -190,6 +190,10 @@ header .top-header {
 
 /* CARDS SECTION */
 
+.cards .container .card {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
 .cards .card-fullwidth {
     width: 100%;
     padding: 70px;
