@@ -13,6 +13,11 @@
     /* padding-bottom: 30px; */
 }
 
+.container-small{
+    width: 815px;
+    margin: auto;
+}
+
 .clearfix::after{
     content: "";
     display: table;
@@ -38,7 +43,6 @@
 /* Buttons */
 .btn {
     display: inline-block;
-    /* min-width: 100px; */
     padding: 10px;
     text-align: center;
     font-size: 12px;
@@ -69,13 +73,12 @@ h1 {
     font-size: 48px;
 }
 
-
 header .top-header {
     line-height: 80px;
     background-color: #f4f9fd;
 }
 
-
+/* Stilizzo le liste nell header */
 .top-header .left-col ul li{
     display: inline-block;
     padding-right: 30px;
@@ -97,6 +100,7 @@ header .top-header {
     color: #32495b;
 }
 
+/* resetto la line height dei bottoni */
 .top-header ul li a.btn {
     line-height: 1;
 }
@@ -125,6 +129,7 @@ header .top-header {
     padding-top: 70px;
 }
 
+/* Green Block in HERO */
 .green-margin-block{
     position: absolute;
     bottom: 0;
@@ -136,16 +141,36 @@ header .top-header {
 }
 
 /* spazio verticalmente gli elementi nell'HERO */
-.hero .container .w50 * {
+.hero .container .w50 *{
     margin-bottom: 30px;
 }
 
 /* aumento spazio interlinea in p */
-.hero .container .w50 p {
+.hero .container .w50 p,
+.rubik .container-small p {
     line-height: 1.6em;
 }
 
 .hero .container .w50 span {
     display: block;
     font-size: 12px;
+}
+
+/* SEZIONE RUBIK */
+.rubik {
+    text-align: center;
+}
+
+.rubik .container-small img {
+    width: 250px;
+    margin-top: 50px;
+}
+
+.rubik .container-small p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.rubik .container-small h2 {
+    font-size: 30px;
 }
