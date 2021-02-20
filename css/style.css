@@ -6,13 +6,13 @@
 
 /* UTILITIES */
 
+/* container larghezza standard */
 .container {
     width: 1180px;
     margin: auto;
-    /* padding-top: 30px; */
-    /* padding-bottom: 30px; */
 }
 
+/* container larghezza ridotta */
 .container-small{
     width: 815px;
     margin: auto;
@@ -93,7 +93,7 @@ header .top-header {
 /* Stilizzo le liste nell header */
 .top-header .left-col ul li{
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 15px;
 }
 
 .top-header .right-col ul li,
@@ -102,17 +102,13 @@ header .top-header {
     padding-left: 25px;
 }
 
-/* BORDO */
-/* .top-header .left-col ul li:first-child {
-    border-right: 1px solid #32495b;
-} */
-
+/* stile link che non siano bottoni */
 .top-header ul li a:not(.btn) {
     text-decoration: none;
     color: #32495b;
 }
 
-/* resetto la line height dei bottoni */
+/* resetto la line height dei bottoni in modo che non occupino l'intera altezza*/
 .top-header ul li a.btn {
     line-height: 1;
 }
@@ -121,11 +117,18 @@ header .top-header {
     border-bottom: 1px solid #32495b;
 }
 
-/* bottom header */
+/* piccola lineetta tra English e Contact Us nell header */
+.top-header .container .left-col ul li:first-child i:nth-child(2){
+    border-right: 2px solid gray;
+    padding-right: 15px;
+}
+
+/* BOTTOM HEADER */
 .bottom-header{
     line-height: 80px;
 }
 
+/* allineo verticalmente il logo*/
 .bottom-header .left-col img{
     vertical-align: middle;
 }
@@ -141,7 +144,7 @@ header .top-header {
     padding-top: 70px;
 }
 
-/* Green Block in HERO */
+/* Green Block in HERO che si sovrappone al BG*/
 .green-margin-block{
     position: absolute;
     bottom: 0;
@@ -176,7 +179,6 @@ header .top-header {
 
 .rubik .container-small img {
     width: 250px;
-    margin-top: 50px;
 }
 
 .rubik .container-small p {
@@ -190,16 +192,38 @@ header .top-header {
 
 /* CARDS SECTION */
 
+.cards {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* imposto un'ombreggiatura alle card */
 .cards .container .card {
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* LAYOUT CARDS */
+/* card top full width */
 .cards .card-fullwidth {
     width: 100%;
     padding: 70px;
     padding-right: 120px;
+    margin-bottom: 60px;
+    background-color: #fff;
 }
 
+/* parte sinistra al 33% */
+.cards .container .card-fullwidth .image {
+    width: 33%;
+    text-align: center;
+}
+
+/* parte destra con testo al 66% */
+.cards .info {
+    width: 66%;
+}
+
+/* tre card sotto con la stessa larghezza */
 .cards .container .three-col .left-col,
 .cards .container .three-col .center-col,
 .cards .container .three-col .right-col {
@@ -209,25 +233,14 @@ header .top-header {
     padding: 25px 35px;
 }
 
-.cards .card-fullwidth {
-    width: 100%;
-    margin-bottom: 60px;
-    background-color: #fff;
-}
-
-.cards .info {
-    width: 66%;
-}
-
+/* imposto un margine tra le cards sfruttando quella centrale */
 .cards .center-col {
     margin-left: 60px;
     margin-right: 60px;
 }
+/* ======== */
 
-.cards .container .card-fullwidth .image {
-    width: 33%;
-    text-align: center;
-}
+/* Styles cards */
 
 .cards .container .card-fullwidth .image img {
     width: 180px;
@@ -250,10 +263,12 @@ header .top-header {
 
 }
 
+/* div che contiene un testo che si sovrappone ad un hr */
 .cards .h4hr {
     position: relative;
 }
 
+/* il testo in h4 copre parzialmente l hr sottostante per ottenere l'effetto desiderato */
 .cards .info h4 {
     display: inline-block;
     width: 40%;
@@ -263,6 +278,7 @@ header .top-header {
     background-color: #fff;
 }
 
+/* tah hr sottostante con un piccolo allineamento */
 .cards .info hr {
     position: relative;
     top: 10px;
@@ -277,7 +293,7 @@ header .top-header {
     margin-right: 15px;
 }
 
-/* NON FUNZIONA */
+/* NON FUNZIONA, cercavo di inserire un fontawsome tramite pseudo selettore */
 /* .cards .info ul li::before {*/
     /* content: '\f058'; */
 /* } */
@@ -288,13 +304,14 @@ header .top-header {
     height: 100px;
 }
 
-
 .cards .three-col h3 {
     font-size: 24px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
+/* imposto inline-block e altezza minima per ottenere un border-bottom */
+/* che rimanga alla stessa altezza tra le 3 colonne */
 .cards .three-col p {
     display: inline-block;
     min-height: 170px;
@@ -310,4 +327,54 @@ header .top-header {
 
 .cards .three-col a {
     margin-top: 50px;
+}
+
+/* gradient section */
+.gradient {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    min-height: 100px; /*PROVVISORIO FIXME:*/
+    background-image: linear-gradient(to right, #00a8ba, #00b9a9);
+    color: #fff;
+    text-align: center;
+}
+
+.gradient .container > h2{
+    font-size: 29px;
+}
+
+.gradient p{
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+/* dimensioni celle */
+.gradient .cell {
+    width: calc(100%/4);
+    height: 170px;
+    padding-top: 25px;
+}
+
+/* margini tra gli elementi della cella */
+.gradient .cell > *:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+/* imposto i margini della griglia */
+/* margine che divide le righe */
+.gradient .grid .top-row {
+    border-bottom: 1px solid #fff;
+}
+
+/* margine che divide le colonne */
+.gradient .grid .cell:not(:last-child) {
+    border-right: 1px solid #fff;
+}
+
+.gradient .cell h2 {
+    font-size: 40px;
+}
+
+.gradient .cell span {
+    font-size: 12px;
 }
