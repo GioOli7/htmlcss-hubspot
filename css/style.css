@@ -85,6 +85,10 @@ h1 {
     font-size: 48px;
 }
 
+p {
+    line-height: 1.6em;
+}
+
 header .top-header {
     line-height: 80px;
     background-color: #f4f9fd;
@@ -161,11 +165,11 @@ header .top-header {
 }
 
 /* aumento spazio interlinea in p */
-.hero .container .w50 p,
+/* .hero .container .w50 p,
 .rubik .container-small p,
 .cards .three-col p {
     line-height: 1.6em;
-}
+} */
 
 .hero .container .w50 span {
     display: block;
@@ -174,6 +178,7 @@ header .top-header {
 
 /* SEZIONE RUBIK */
 .rubik {
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -183,7 +188,6 @@ header .top-header {
 
 .rubik .container-small p {
     margin-top: 30px;
-    margin-bottom: 50px;
 }
 
 .rubik .container-small h2 {
@@ -333,7 +337,6 @@ header .top-header {
 .gradient {
     padding-top: 50px;
     padding-bottom: 100px;
-    min-height: 100px; /*PROVVISORIO FIXME:*/
     background-image: linear-gradient(to right, #00a8ba, #00b9a9);
     color: #fff;
     text-align: center;
@@ -377,4 +380,85 @@ header .top-header {
 
 .gradient .cell span {
     font-size: 12px;
+}
+
+/* SECTION SPONSORS */
+.sponsors {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sponsors .container{
+    position: relative;
+}
+
+/* dimensione colonna sinistra */
+.sponsors .left-col {
+    width: 40%;
+}
+
+/* dimensione colonna destra */
+.sponsors .right-col {
+    width: 60%;
+    padding-left: 20px;
+}
+
+/* container piccolo */
+.container-spons {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 90px;
+    padding-right: 30px;
+}
+
+.container-spons h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.sponsors .left-col > h2 {
+    font-size: 31px;
+    margin-bottom: 55px;
+}
+
+/* stile bottone */
+.sponsors .left-col a.btn {
+    width: 160px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sponsors .left-col span {
+    display: block;
+    font-size: 12px;
+}
+
+/* assegno altezza fissa alle row */
+.sponsors .right-col .grid-sponsor .first-row,
+.sponsors .right-col .grid-sponsor .second-row {
+    height: 60px;
+}
+
+/* dimensione celle */
+.sponsors .right-col .grid-sponsor .cell {
+    position: relative;
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+/* dimensione e posizonamento img nelle cells */
+.sponsors .right-col .grid-sponsor .cell img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 135px;
+    padding-right: 22px;
+}
+
+/* dimensione e posizionamento della img ritratto */
+.sponsors .ritratto img {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+    width: 320px;
 }
