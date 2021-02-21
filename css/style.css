@@ -66,6 +66,12 @@
     padding: 20px 25px;
 }
 
+.btn.btn-white {
+    background-color: #dadee0;
+    border-color: #dadee0;
+    color: #32495b;
+}
+
 .orange {
     color: #fe775a;
 }
@@ -418,7 +424,7 @@ header .top-header {
 
 .sponsors .left-col > h2 {
     font-size: 31px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 /* stile bottone */
@@ -461,4 +467,72 @@ header .top-header {
     right: 0;
     bottom: 15px;
     width: 320px;
+}
+
+/* footer */
+
+footer {
+    background-color: #32495b;
+}
+
+footer .container {
+    padding-top: 45px;
+    padding-bottom: 50px;
+}
+
+footer h4 {
+    color: #fff;
+}
+
+.foot-col {
+    width: calc(100% / 4);
+}
+
+footer .foot-col ul,
+footer .foot-bottom ul {
+    list-style: none;
+    margin-top: 35px;
+}
+
+footer .foot-col ul li{
+    padding-bottom: 20px;
+}
+
+footer .foot-col ul li a,
+footer .lang ul li a,
+footer .foot-bottom ul li a {
+    text-decoration: none;
+    color: #cbd6e2;
+    font-size: 15px;
+}
+
+footer span {
+    display: block;
+    margin-top: 20px;
+    color: #cbd6e2;
+}
+
+footer span i {
+    padding-right: 20px;
+}
+
+footer .container .lang {
+    padding-top: 85px;
+    text-align: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #cbd6e2;
+}
+
+footer .lang ul li,
+footer .foot-bottom ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+footer .foot-bottom {
+    padding-top: 45px;
+}
+
+footer .foot-bottom ul {
+    margin-top: 0;
 }
