@@ -170,13 +170,6 @@ header .top-header {
     margin-bottom: 30px;
 }
 
-/* aumento spazio interlinea in p */
-/* .hero .container .w50 p,
-.rubik .container-small p,
-.cards .three-col p {
-    line-height: 1.6em;
-} */
-
 .hero .container .w50 span {
     display: block;
     font-size: 12px;
@@ -500,20 +493,11 @@ footer .foot-col ul li{
 
 footer .foot-col ul li a,
 footer .lang ul li a,
+footer .links .social-icons ul li a,
 footer .foot-bottom ul li a {
     text-decoration: none;
     color: #cbd6e2;
     font-size: 15px;
-}
-
-footer span {
-    display: block;
-    margin-top: 20px;
-    color: #cbd6e2;
-}
-
-footer span i {
-    padding-right: 20px;
 }
 
 footer .container .lang {
@@ -523,9 +507,18 @@ footer .container .lang {
     border-bottom: 1px solid #cbd6e2;
 }
 
-footer .lang ul li:not(:last-child),
-footer .foot-bottom ul li:not(:last-child){
+footer .lang ul li,
+footer .foot-bottom ul li,
+footer .links .social-icons ul li
+{
     display: inline-block;
+}
+
+
+footer .lang ul li:not(:last-child),
+footer .foot-bottom ul li:not(:last-child),
+footer .links .social-icons ul li:not(:last-child)
+{
     padding-right: 20px;
 }
 
