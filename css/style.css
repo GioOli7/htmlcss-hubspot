@@ -575,3 +575,37 @@ footer .foot-bottom {
 footer .foot-bottom ul {
     margin-top: 0;
 }
+
+.help-chat {
+    position: fixed;
+    display: inline-block;
+    bottom: 20px;
+    right: 50px;
+    background-color: #fe775a;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.help-chat .fas {
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+}
+
+.help-message {
+    display: none;
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+    min-width: 200px;
+    /* min-height: 200px; */
+    background-color: rgb(240, 240, 240);
+    border: 2px solid #c05b44;
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1;
+}
+
+.help-chat:hover .help-message {
+    display: block;
+}
