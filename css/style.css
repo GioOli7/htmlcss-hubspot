@@ -112,11 +112,20 @@ header .top-header {
     padding-left: 25px;
 }
 
-/* stile link che non siano bottoni */
-.top-header ul li a:not(.btn) {
+/* Link style */
+a {
     text-decoration: none;
     color: #32495b;
 }
+
+footer a {
+    color: #cbd6e2;
+}
+
+a:hover {
+    color: #fe775a;
+}
+
 
 /* resetto la line height dei bottoni in modo che non occupino l'intera altezza*/
 .top-header ul li a.btn {
@@ -491,12 +500,7 @@ footer .foot-col ul li{
     padding-bottom: 20px;
 }
 
-footer .foot-col ul li a,
-footer .lang ul li a,
-footer .links .social-icons ul li a,
-footer .foot-bottom ul li a {
-    text-decoration: none;
-    color: #cbd6e2;
+footer a {
     font-size: 15px;
 }
 
