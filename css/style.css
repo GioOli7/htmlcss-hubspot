@@ -68,7 +68,6 @@
     display: block;
 }
 
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
@@ -167,8 +166,6 @@ header .top-header {
     padding-left: 25px;
 }
 
-
-
 /* resetto la line height dei bottoni in modo che non occupino l'intera altezza*/
 .top-header ul li a.btn {
     line-height: 1;
@@ -193,6 +190,80 @@ header .top-header {
 .bottom-header .left-col img{
     vertical-align: middle;
 }
+
+/* SOFTWARE PANEL */
+.panel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    padding: 20px 0px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    border-top: none;
+}
+
+.panel-container {
+    width: 80%;
+    margin: auto;
+}
+
+.panel h4,
+.panel span{
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.panel span {
+    display: block;
+    font-size: 12px;
+}
+
+.panel a {
+    display: inline;
+    font-size: 12px;
+    color: #00aad8;
+}
+
+/* .panel .panel-container a:first-child {
+    border-right: 1px solid black;
+} */
+
+/* dimensioni singole card */
+.panel .panel-container .card {
+    width: calc(100% / 2 - 20px);
+    min-height: 170px;
+    /* margin-right: 20px; */
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* parte sinistra della card con il loghettino */
+.panel .panel-container .card .logo {
+    width: 30%;
+}
+
+/* parte destra con il content */
+.panel .panel-container .card .content {
+    width: 70%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+/* dimensione loghettino */
+.panel .panel-container .card img {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.panel .panel-container .card .content h4 {
+    font-size: 20px;
+}
+
 
 /* HERO */
 .hero {
