@@ -587,7 +587,7 @@ footer .foot-bottom ul {
 }
 
 .help-chat .fas {
-    font-size: 40px;
+    font-size: 30px;
     padding: 20px;
     color: white;
 }
@@ -598,9 +598,8 @@ footer .foot-bottom ul {
     bottom: 90px;
     right: 20px;
     min-width: 200px;
-    /* min-height: 200px; */
     background-color: rgb(240, 240, 240);
-    border: 2px solid #c05b44;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 20px;
     z-index: 1;
@@ -609,3 +608,13 @@ footer .foot-bottom ul {
 .help-chat:hover .help-message {
     display: block;
 }
+
+/* iconcina */
+.help-chat img{
+    width: 20%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
